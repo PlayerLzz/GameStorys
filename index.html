@@ -27,5 +27,21 @@ body {
     color: rgb(255, 136, 0);
     font-size: x-large;
 }
+   <forms>
+    <label>Login: <input type="text" name="Login"></label><br>
+     <label>Senha: <input type="password" name="Senha" id="senha"></label><br>
+    <br> <button type="button" onclick="validarSenha()">Confirmar</button>
+</forms>
+        <p id="resultado"></p>
+
+    <script>
+    function validarSenha() {
+        var entrada = document.getElementById("senha").value;
+        var resultado = document.getElementById("resultado");
+
+        resultado.textContent = "Formulário validado com sucesso!";
+     
+    }
+    </script>
 body
 </html>
